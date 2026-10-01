@@ -8,8 +8,9 @@ services:
     environment:
       NEO4J_AUTH: none
     volumes:
-      - neo4j_data:/data
-      - neo4j_logs:/logs
+      - neo4j/data:/data
+      - neo4j/logs:/logs
+      - neo4j/import:/import
 
 volumes:
   neo4j_data:
